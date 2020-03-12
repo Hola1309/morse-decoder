@@ -4,61 +4,61 @@ const { decode } = require('./src/index.js');
 describe("Easy", function() {
     it("Sentence test 1", function() {
         const expr = "00101010100000000010001011101000101110100000111111**********00001011110000111111000010111000101110100000111010";
-        const result = "helloworld";
+        const result = "hello world";
         expect(decode(expr)).to.equal(result);
     });
     
     it("Sentence test 2", function() {
         const expr = "000000001100101010100000000010**********00111110110000101011000000101000111011100000111011**********00111010100000101110000011111100001011110000001110**********001010111000001111110011101011**********00101111110000101011000000111100101111100000101010**********0000111111001010101100000000100000101110**********000000001100101010100000000010**********0010111010000000101100111110100011101111**********000011101000001111110000111110";
-        const result = "thequickbrownfoxjumpsoverthelazydog";
+        const result = "the quick brown fox jumps over the lazy dog";
         expect(decode(expr)).to.equal(result);
     });
     
     it("Sentence test 3", function() {
         const expr = "0000101110000011111100101110100010111010000000101000000011100000111110**********00001010100011101110000011111100101111100000000010**********000010101000111011100010101010000011111100001111110010111010";
-        const result = "rollingscopeschool";
+        const result = "rolling scope school";
         expect(decode(expr)).to.equal(result);
     });
     
     it("Sentence test 4", function() {
         const expr = "0000101110000011111100000010110000111010**********00000000110000111111**********00101111100000101110000011111100001111100000101110000000101100000011110000001111000000101000000011100000111110";
-        const result = "roadtoprogramming";
+        const result = "road to programming";
         expect(decode(expr)).to.equal(result);
     });
     
     it("Sentence test 5", function() {
         const expr = "0000101010000011111100000011110000000010000011111100000011100000000010**********00001011100000000010000000101100001110100000101010**********0000000011001010101000000010100000101010";
-        const result = "someonereadsthis";
+        const result = "someone reads this";
         expect(decode(expr)).to.equal(result);
     });
     
     it("Sentence test 6", function() {
         const expr = "001010101000000000100011101111**********001110111100001111110000101011**********0010101010000000001000101110100010111110**********00000011110000000010";
-        const result = "heyyouhelpme";
+        const result = "hey you help me";
         expect(decode(expr)).to.equal(result);
     });
     
     it("Sentence test 7", function() {
         const expr = "0000000011001010101000000000100011101111**********0000111011000000001000000000100010111110**********00000011110000000010**********00000010100000001110**********000000001100101010100000000010**********00111010100000001011000010101000000000100000001111000000001000000011100000000011";
-        const result = "theykeepmeinthebasement";
+        const result = "they keep me in the basement";
         expect(decode(expr)).to.equal(result);
     });
     
     it("Sentence test 8", function() {
         const expr = "0000101010000000101100101010110000000010**********00000011110000000010";
-        const result = "saveme";
+        const result = "save me";
         expect(decode(expr)).to.equal(result);
     });
     
     it("Sentence test 9", function() {
         const expr = "0011101110000000101100101110100010111010**********000000001100101010100000000010**********001011111000001111110010111010000000101000111011100000000010";
-        const result = "callthepolice";
+        const result = "call the police";
         expect(decode(expr)).to.equal(result);
     });
     
     it("Sentence test 10", function() {
         const expr = "000000101100000011100000101010000010111100000000100000101110**********00001111110000001110**********000000001100101010100000000010**********00001010110010111010000000001100000010100000001111000000101100000000110000000010**********00111110110000101011000000001000001010100000000011000000101000001111110000001110**********00001111110010101110**********0010111010000000101000101011100000000010**********000000001100101010100000000010**********00001010110000001110000000101000101010110000000010000010111000001010100000000010**********000000101100000011100000111010**********0000000010001010101100000000100000101110001110111100000000110010101010000000101000000011100000111110**********00000010100000101010**********10101010111010111111";
-        const result = "answerontheultimatequestionoflifetheuniverseandeverythingis42";
+        const result = "answer on the ultimate question of life the universe and everything is 42";
         expect(decode(expr)).to.equal(result);
     });
     
